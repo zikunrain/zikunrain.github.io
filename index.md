@@ -1,7 +1,6 @@
 ## Welcome to Zikun Deng‘s homePage
 
-This is my [GitHub](https://github.com/MRsoldiers)
-
+![图片](images/me.png)
 
 ### About Me
 
