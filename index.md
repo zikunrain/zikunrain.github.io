@@ -1,6 +1,6 @@
 ## Welcome to Zikun Deng‘s homePage
 
-![图片](images/me.png)
+![图片](image/me.jpg)
 
 ### About Me
 
