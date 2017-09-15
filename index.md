@@ -1,37 +1,20 @@
 ## Welcome to Zikun Deng‘s homePage
 
-You can use the [editor on GitHub](https://github.com/MRsoldiers/MRsoldiers.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+This is my [GitHub](https://github.com/MRsoldiers)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### About Me
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+School of Engineering, Sun Yat-Sen University , GuangZhou, China
 
-```markdown
-Syntax highlighted code block
+Address: Zhishanyuan 10, Higher Education Maga Center Campus, Sun Yat-Sen University
 
-# Header 1
-## Header 2
-### Header 3
+Phone: 0086-18819252086
 
-- Bulleted
-- List
+Email: 769670984@qq.com / derain769@gmail.com
 
-1. Numbered
-2. List
+Research Interests: Urban Computing, Visual Analytics
 
-**Bold** and _Italic_ and `Code` text
+### Publications
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MRsoldiers/MRsoldiers.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+To be updated.
