@@ -12,7 +12,7 @@ Address: Zhishanyuan 10, Higher Education Maga Center Campus, Sun Yat-Sen Univer
 
 Phone: 0086-18819252086
 
-Email: 769670984@qq.com / derain769@gmail.com
+Email: 769670984@qq.com / zikun.rain@gmail.com
 
 Research Interests: Urban Computing, Visual Analytics
 
