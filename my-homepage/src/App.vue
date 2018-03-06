@@ -1,0 +1,119 @@
+<template>
+  <div id="app">
+    <name-and-pic></name-and-pic>
+    <menu-bar></menu-bar>
+    <about-view></about-view>
+    <!-- <img src="./assets/me.jpg"> -->
+    <!-- <router-view/> -->
+  </div>
+</template>
+
+<script>
+import NameAndPic from './components/NameAndPic'
+import MenuBar from './components/MenuBar'
+import AboutView from './components/AboutView'
+
+export default {
+  name: 'App',
+  components: {
+    NameAndPic,
+    MenuBar,
+    AboutView
+  }
+}
+</script>
+
+<style lang="scss">
+body, #app {
+  background-color: #ecf0f1;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  // font-family: Hind,sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #2c3e50;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+#app {
+  .name-and-pic {
+    width: calc(100%);
+    height: 400px;
+  }
+
+  .menu-bar {
+    background-color: #fff;
+    border-bottom: 1px solid #dedede;
+  }
+
+  .card-title {
+    position: relative;
+    flex: 1;
+    padding: 10px;
+    text-align: right;
+    right: 100px;
+    font-size: 3em;
+
+    .card-sub-title {
+      color: #a6a7aa;
+      font-size: 0.5em;
+    }
+  }
+  .card {
+    flex: 2;
+    padding: 10px;
+    color: #a6a7aa;
+    font-size: 1.2em;
+
+    b {
+      color: #444 !important;
+    }
+  }
+
+  // .main-view {
+  //   flex: 1 1;
+  //   display: flex;
+  //   flex-direction: column;
+  //   margin: 4px;
+
+  //   .view {
+  //     background-color: #fff;
+  //     margin: 4px;
+  //     border-radius: 5px;
+  //     border: 1px solid #dedede;
+  //   }
+
+  //   & > .top {
+  //     flex: 0 0 65%;
+  //     display: flex;
+  //     flex-direction: row;
+
+  //     .corview-cont {
+  //       flex: 0 0 60%;
+  //       min-width: #{(1920px - 73px) * 0.6};
+  //     }
+
+  //     .stview-cont {
+  //       flex: 1 1;
+  //     }
+  //   }
+
+  //   & > .bottom {
+  //     flex: 1 1;
+  //     display: flex;
+  //     flex-direction: row;
+
+  //     .statview-cont {
+  //       flex: 0 0 60%;
+  //       min-width: #{(1920px - 73px) * 0.6};
+  //     }
+
+  //     .pattable-cont {
+  //       flex: 1 1;
+  //     }
+  //   }
+  // }
+}
+</style>
