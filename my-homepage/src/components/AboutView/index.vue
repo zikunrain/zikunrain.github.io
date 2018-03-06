@@ -22,15 +22,36 @@
           His research interests include Urban Computing and Visual Analytics, especially <b>the Visualization of Urban Data</b>.
         </p>
         <div class="slides">
-          <transition tag="ul" class='slide-ul' name="list" mode="out-in">
-            <li v-for="(list, index) in slideList"
+          <transition-group tag="ul" class='slide-ul' name="list">
+            <li v-for="(i, index) in slideList"
               :key="index"
-              v-if="index===currentIndex">
+              v-if="index === currentIndex">
               <a href="#">
-                <img style="height:530px" :src="list.image" :alt="list.desc">
+                <img style="height:530px" :src="i.image" :alt="i.desc">
               </a>
             </li>
-          </transition>
+
+            <!-- <li v-if="0===currentIndex">
+              <a href="#">
+                <img style="height:530px" src='../../assets/slide0.jpg' alt="nhwc">
+              </a>
+            </li>
+            <li v-else-if="1===currentIndex">
+              <a href="#">
+                <img style="height:530px" src='../../assets/slide1.jpg' alt="hxrj">
+              </a>
+            </li>
+            <li v-else-if="2===currentIndex">
+              <a href="#">
+                <img style="height:530px" src='../../assets/slide2.jpg' alt="rsdh">
+              </a>
+            </li>
+            <li v-else>
+              <a href="#">
+                <img style="height:530px" src='../../assets/slide3.jpg' alt="rsah">
+              </a>
+            </li> -->
+          </transition-group>
         </div>
       </div>
     </div>
@@ -38,6 +59,12 @@
 </template>
 
 <script>
+
+import image0 from '../../assets/slide0.jpg'
+import image1 from '../../assets/slide1.jpg'
+import image2 from '../../assets/slide2.jpg'
+import image3 from '../../assets/slide3.jpg'
+
 export default {
   name: 'd',
   data () {
@@ -45,19 +72,19 @@ export default {
       slideList: [
         {
           desc: 'nhwc',
-          image: '/static/img/slide0.6b2d0d7.jpg'
+          image: image0
         },
         {
           desc: 'hxrj',
-          image: '/static/img/slide1.3dd4871.jpg'
+          image: image1
         },
         {
           desc: 'rsdh',
-          image: '/static/img/slide2.89b04ae.jpg'
+          image: image2
         },
         {
           desc: 'rsah',
-          image: '/static/img/slide3.d507211.jpg'
+          image: image3
         }
       ],
       currentIndex: 0,
@@ -119,25 +146,34 @@ export default {
   }
 
   .slides {
+    position: relative;
     height: 530px;
+
     li {
-      list-style:none;
+      left: 0px;
+      list-style: none;
+      position: absolute;
+      // display: none;
     }
+
+    // .shown {
+    //   display: block !important;
+    // }
   }
 }
 
 .list-enter-to {
-  transition: all 1s ease-out;
+  transition: all .5s ease-in;
   transform: translateX(0);
 }
 
 .list-leave-active {
   transition: all 1s ease-in;
-  transform: translateX(-20px)
+  transform: translateX(0px)
 }
 
 .list-enter {
-  transform: translateX(20px)
+  transform: translateX(30px)
 }
 
 .list-leave {
