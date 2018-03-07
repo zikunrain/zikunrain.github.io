@@ -10,15 +10,15 @@
       <div class="about-message">
         <p>
           <b>Zikun Deng</b>
-          attended Transportation of Engineering, Sun Yat-sen University in September 2014. During study in SYSU, he successively
-          focused on the smart card data mining for public transportation and travel time prediction in Guangdong Provincial Key Laboratory of ITS.
-          In addition, he has won a <b>national scholarship</b> in 2015 and his GPA ranked the top 5% as of the third year.
+          attended Transportation of Engineering, Sun Yat-sen University(SYSU) in September 2014. During study in SYSU, he successively
+          focused on the smart card data mining for public transportation and travel time prediction in Guangdong Provincial Key Lab of ITS.
+          In addition, he has won the <b>national scholarship</b> in 2015 and his GPA ranked the top 5% as of the third year.
         </p>
         <p>
           Since February 2017, he has begun to study computer science and engaged in the research of urban data visualization.
-          He's now a member of ZJUVIS Group at the State Key Lab of CAD&CG, Zhejiang University,
-          supervised by Prof. <a href="http://www.ycwu.org">Yingcai Wu</a>.
-          Starting from September 2018, he will pursue a Ph.D. in Computer Science from Zhejiang University.
+          He has been in <a href="http://zjuvis.org">ZJUVIS Group</a> at the State Key Lab of CAD&CG, Zhejiang University(ZJU),
+          under Prof. <a href="http://www.ycwu.org">Yingcai Wu</a>'s supervision.
+          Starting from September 2018, he will pursue a Ph.D. in Computer Science from ZJU.
           His research interests include Urban Computing and Visual Analytics, especially <b>the Visualization of Urban Data</b>.
         </p>
         <div class="slides">
@@ -27,30 +27,9 @@
               :key="index"
               v-if="index === currentIndex">
               <a href="#">
-                <img style="height:530px" :src="i.image" :alt="i.desc">
+                <img :src="i.image" :alt="i.desc">
               </a>
             </li>
-
-            <!-- <li v-if="0===currentIndex">
-              <a href="#">
-                <img style="height:530px" src='../../assets/slide0.jpg' alt="nhwc">
-              </a>
-            </li>
-            <li v-else-if="1===currentIndex">
-              <a href="#">
-                <img style="height:530px" src='../../assets/slide1.jpg' alt="hxrj">
-              </a>
-            </li>
-            <li v-else-if="2===currentIndex">
-              <a href="#">
-                <img style="height:530px" src='../../assets/slide2.jpg' alt="rsdh">
-              </a>
-            </li>
-            <li v-else>
-              <a href="#">
-                <img style="height:530px" src='../../assets/slide3.jpg' alt="rsah">
-              </a>
-            </li> -->
           </transition-group>
         </div>
       </div>
@@ -119,14 +98,6 @@ export default {
         this.currentIndex = 0
       }
     }
-    // greet: function (event) {
-    //   // `this` 在方法里指向当前 Vue 实例
-    //   alert('Hello ' + this.name + '!')
-    //   // `event` 是原生 DOM 事件
-    //   if (event) {
-    //     alert(event.target.tagName)
-    //   }
-    // }
   }
 }
 </script>
@@ -149,16 +120,16 @@ export default {
     position: relative;
     height: 530px;
 
+    img {
+      position: relative;
+      height: 530px;
+    }
+
     li {
       left: 0px;
       list-style: none;
       position: absolute;
-      // display: none;
     }
-
-    // .shown {
-    //   display: block !important;
-    // }
   }
 }
 

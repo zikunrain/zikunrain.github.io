@@ -3,7 +3,7 @@
     <img class="background-pic" src="../../assets/cat2.jpg">
     <img class="small-pic" src="../../assets/cat3.jpg">
     <span class="title">Zikun Deng</span>
-    <span class="sub-title">Will be CS PhD candidate in Sept. this year</span>
+    <span class="sub-title">A bachelor?</span>
     <span class="email">zikun.rain@gmail.com</span>
   </div>
 </template>
@@ -61,7 +61,7 @@ export default {
     text-align: center;
 
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 
   .email {
@@ -74,7 +74,7 @@ export default {
     text-align: center;
 
     font-weight: 400;
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 </style>

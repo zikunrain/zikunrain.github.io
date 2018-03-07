@@ -5,6 +5,7 @@
       <div class="menu-item">ABOUT</div>
       <div class="menu-item">GITHUB</div>
       <div class="menu-item">BLOG</div>
+      <div class="menu-item">PUBLICATIONS</div>
     </div>
   </div>
 </template>
@@ -25,7 +26,7 @@ export default {
     left: calc(50% - 300px);
     display: flex;
     height: calc(100%);
-    width: 600px;
+    width: 700px;
     line-height: 80px;
 
     .menu-item {

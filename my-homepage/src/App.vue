@@ -3,6 +3,8 @@
     <name-and-pic></name-and-pic>
     <menu-bar></menu-bar>
     <about-view></about-view>
+    <publication-view></publication-view>
+    <blog-view></blog-view>
     <!-- <img src="./assets/me.jpg"> -->
     <!-- <router-view/> -->
   </div>
@@ -12,13 +14,17 @@
 import NameAndPic from './components/NameAndPic'
 import MenuBar from './components/MenuBar'
 import AboutView from './components/AboutView'
+import PublicationView from './components/PublicationView'
+import BlogView from './components/BlogView'
 
 export default {
   name: 'App',
   components: {
     NameAndPic,
     MenuBar,
-    AboutView
+    AboutView,
+    PublicationView,
+    BlogView
   }
 }
 </script>
@@ -27,7 +33,6 @@ export default {
 body, #app {
   background-color: #ecf0f1;
   font-family: 'Lato', Helvetica, Arial, sans-serif;
-  // font-family: Hind,sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
@@ -66,6 +71,10 @@ body, #app {
     padding: 10px;
     color: #a6a7aa;
     font-size: 1.2em;
+
+    p {
+      text-align: justify;
+    }
 
     b {
       color: #444 !important;
