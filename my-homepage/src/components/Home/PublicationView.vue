@@ -26,8 +26,7 @@ export default {
 <style lang="scss">
 .publication-view {
   width: calc(100%);
-  background-color: #ffffff;
-  border-bottom: 1px solid #dedede;
+  background-color: #fafafa;
   padding: 50px;
   float: left;
   display: flex;

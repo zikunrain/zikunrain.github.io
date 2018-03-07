@@ -2,7 +2,7 @@
   <div class="name-and-pic">
     <img class="background-pic" src="../../assets/cat2.jpg">
     <img class="small-pic" src="../../assets/cat3.jpg">
-    <span class="title">Zikun Deng</span>
+    <span class="title">Zikun Deng(邓紫坤)</span>
     <span class="sub-title">A bachelor?</span>
     <span class="email">zikun.rain@gmail.com</span>
   </div>
@@ -41,11 +41,12 @@ export default {
 
   .title {
     position: absolute;
-    width: 200px;
+    width: 400px;
     top: 260px;
-    left: calc(50% - 100px);
+    left: calc(50% - 200px);
     font-weight: 900;
     font-size: 2.2em;
+    font-weight: 800;
     color: #333333;
     line-height: 1.1;
     text-align: center;

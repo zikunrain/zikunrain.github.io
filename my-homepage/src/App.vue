@@ -1,7 +1,10 @@
 <template>
-  <div id="app">
+  <div id="app"
+    @mousewheel="wheeling()">
     <name-and-pic></name-and-pic>
-    <menu-bar></menu-bar>
+    <menu-bar ref="refOfMenuBar" id="menubar"
+      :class="{fixed: isFixedMenuBar}">
+    </menu-bar>
     <about-view></about-view>
     <publication-view></publication-view>
     <blog-view></blog-view>
@@ -11,20 +14,45 @@
 </template>
 
 <script>
-import NameAndPic from './components/NameAndPic'
-import MenuBar from './components/MenuBar'
-import AboutView from './components/AboutView'
-import PublicationView from './components/PublicationView'
-import BlogView from './components/BlogView'
+import NameAndPic from './components/Home/NameAndPic'
+import MenuBar from './components/Home/MenuBar'
+import AboutView from './components/Home/AboutView'
+import PublicationView from './components/Home/PublicationView'
+import BlogView from './components/Home/BlogView'
 
 export default {
   name: 'App',
+  data () {
+    return {
+      // isFixedMenuBar: false,
+      menuBarOffsetY: 0
+    }
+  },
+  computed: {
+    isFixedMenuBar: function () {
+      return this.menuBarOffsetY >= 400
+    }
+  },
   components: {
     NameAndPic,
     MenuBar,
     AboutView,
     PublicationView,
     BlogView
+  },
+  methods: {
+    wheeling: function (e) {
+      // const a = document.getElementById('menubar').getBoundingClientRect().y
+      // console.log(a)
+      console.log(document.getElementById('app').scrollTop)
+      this.menuBarOffsetY = document.getElementById('app').scrollTop
+      // console.log(menuBarOffsetY)
+      // // if (menuBarOffsetY < 0) {
+      // //   this.isFixedMenuBar = true
+      // // } else {
+      // //   this.isFixedMenuBar = false
+      // // }
+    }
   }
 }
 </script>
@@ -45,7 +73,7 @@ body, #app {
 #app {
   .name-and-pic {
     width: calc(100%);
-    height: 400px;
+    height: 380px;
   }
 
   .menu-bar {

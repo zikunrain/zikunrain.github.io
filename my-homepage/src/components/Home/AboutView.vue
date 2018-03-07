@@ -107,7 +107,6 @@ export default {
 .about-view {
   width: calc(100%);
   background-color: #ffffff;
-  border-bottom: 1px solid #dedede;
   padding: 50px;
   float: left;
   display: flex;
