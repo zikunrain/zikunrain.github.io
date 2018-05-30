@@ -21,13 +21,13 @@
           Starting from September 2018, he will pursue a Ph.D. in Computer Science from ZJU.
           His research interests include Urban Computing and Visual Analytics, especially <b>the Visualization of Urban Data</b>.
         </p>
-        <div class="slides">
+        <div class="slides" :style="{ height: slidesHeight + 'px' }">
           <transition-group tag="ul" class='slide-ul' name="list">
             <li v-for="(i, index) in slideList"
               :key="index"
               v-if="index === currentIndex">
               <a href="#">
-                <img :src="i.image" :alt="i.desc">
+                <img ref="imgRef" :src="i.image" :alt="i.desc">
               </a>
             </li>
           </transition-group>
@@ -48,6 +48,7 @@ export default {
   name: 'd',
   data () {
     return {
+      slidesHeight: 1,
       slideList: [
         {
           desc: 'nhwc',
@@ -77,20 +78,10 @@ export default {
         _this.autoPlay()
       }, 4000)
     })
+
+    const rect = this.$refs.imgRef[0].getBoundingClientRect()
+    this.slidesHeight = rect.width * 0.62
   },
-  // go () {
-  //   const _this = this
-  //   this.timer = setInterval(() => {
-  //     _this.autoPlay()
-  //   }, 4000)
-  // },
-  // stop () {
-  //   clearInterval(this.timer)
-  //   this.timer = null
-  // },
-  // change (index) {
-  //   this.currentIndex = index
-  // },
   methods: {
     autoPlay: function () {
       this.currentIndex++
@@ -105,29 +96,30 @@ export default {
 <style lang="scss">
 
 .about-view {
+  position: relative;
   width: calc(100%);
   background-color: #ffffff;
   padding: 50px;
-  float: left;
   display: flex;
 
   .about-message {
-    width: calc(70%);
-  }
-
-  .slides {
     position: relative;
-    height: 530px;
+    width: calc(70%);
 
-    img {
+    .slides {
       position: relative;
-      height: 530px;
-    }
+      width: calc(100%);
 
-    li {
-      left: 0px;
-      list-style: none;
-      position: absolute;
+      li {
+        left: 0px;
+        list-style: none;
+        position: relative;
+
+        img {
+          position: absolute;
+          width: calc(100% - 30px);
+        }
+      }
     }
   }
 }

@@ -8,8 +8,6 @@
     <about-view></about-view>
     <publication-view></publication-view>
     <blog-view></blog-view>
-    <!-- <img src="./assets/me.jpg"> -->
-    <!-- <router-view/> -->
   </div>
 </template>
 
@@ -24,12 +22,11 @@ export default {
   name: 'App',
   data () {
     return {
-      // isFixedMenuBar: false,
       menuBarOffsetY: 0
     }
   },
   computed: {
-    isFixedMenuBar: function () {
+    isFixedMenuBar () {
       return this.menuBarOffsetY >= 400
     }
   },
@@ -42,16 +39,7 @@ export default {
   },
   methods: {
     wheeling: function (e) {
-      // const a = document.getElementById('menubar').getBoundingClientRect().y
-      // console.log(a)
-      console.log(document.getElementById('app').scrollTop)
       this.menuBarOffsetY = document.getElementById('app').scrollTop
-      // console.log(menuBarOffsetY)
-      // // if (menuBarOffsetY < 0) {
-      // //   this.isFixedMenuBar = true
-      // // } else {
-      // //   this.isFixedMenuBar = false
-      // // }
     }
   }
 }
@@ -71,6 +59,7 @@ body, #app {
   overflow-x: hidden;
 }
 #app {
+
   .name-and-pic {
     width: calc(100%);
     height: 380px;
@@ -83,7 +72,7 @@ body, #app {
 
   .card-title {
     position: relative;
-    flex: 1;
+    flex: 1 1;
     padding: 10px;
     text-align: right;
     right: 100px;
@@ -95,7 +84,7 @@ body, #app {
     }
   }
   .card {
-    flex: 2;
+    flex: 2 1;
     padding: 10px;
     color: #a6a7aa;
     font-size: 1.2em;
@@ -108,49 +97,5 @@ body, #app {
       color: #444 !important;
     }
   }
-
-  // .main-view {
-  //   flex: 1 1;
-  //   display: flex;
-  //   flex-direction: column;
-  //   margin: 4px;
-
-  //   .view {
-  //     background-color: #fff;
-  //     margin: 4px;
-  //     border-radius: 5px;
-  //     border: 1px solid #dedede;
-  //   }
-
-  //   & > .top {
-  //     flex: 0 0 65%;
-  //     display: flex;
-  //     flex-direction: row;
-
-  //     .corview-cont {
-  //       flex: 0 0 60%;
-  //       min-width: #{(1920px - 73px) * 0.6};
-  //     }
-
-  //     .stview-cont {
-  //       flex: 1 1;
-  //     }
-  //   }
-
-  //   & > .bottom {
-  //     flex: 1 1;
-  //     display: flex;
-  //     flex-direction: row;
-
-  //     .statview-cont {
-  //       flex: 0 0 60%;
-  //       min-width: #{(1920px - 73px) * 0.6};
-  //     }
-
-  //     .pattable-cont {
-  //       flex: 1 1;
-  //     }
-  //   }
-  // }
 }
 </style>
