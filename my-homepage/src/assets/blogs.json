@@ -1,0 +1,35 @@
+{
+    "Blogs": [
+        {
+            "pic":  "TACO.png",
+            "title": "TACO: Visualizing Changes in Tables Over Time",
+            "content": "<p>As one of the most common data structures, tabular data may change over time in four types: structural (add/remove), content, reorder, and split/merge (each type is encoded by a consistent and distinguished color across this work). Considering the requirements of inspection and comparison along a set of these changes, this work designs a multilevel visualization framework to provide an overview+detail exploration.</p><p>An important and challenging task when making sense such data is to investigate the difference between multiple versions of a table, for instance, to detect modifications in monthly payroll tables or to observe differences in multiple biological experiments.</p><p>First is timeline overview. Stacked bars placed on the top of time ticks are used to present the ratios of each type of changes between consecutive versions of table. Then the aggregated pairwise comparison applies an abstract and compact visualization to encode the distribution of changes between the tables. It also directly shows meta-information about the table. Furthermore, this work designs a visualization to support detailed pairwise comparison. Pixel-based diff heatmap encodes the four possible change types in a tailored way.</p>",
+            "ref": "Niederer C, Stitz H, Hourieh R, et al. TACO: Visualizing Changes in Tables Over Time[J]. IEEE Transactions on Visualization & Computer Graphics, 2018, PP(99):1-1."
+        },
+        {
+            "pic": "mobike.png",
+            "title": "Planning Bike Lanes based on Sharing-Bikes' Trajectories",
+            "content": "<p>Since the Mobike is a type of station-free sharing-bike, the trajectories of Mobike users reflect actual urban travel demands. This work proposes a data-driven approach to plan bike lanes under real world constraints, based on a large scale sharing bikes trajectories.</p><p>The problem is formulated as a constrained optimization problem, which maximizes the total beneficial score, and fulfills two constraints: 1) the total budget is no more than B, and 2) the number of connected components is less than k.</p><p>They prove the NP-hardness of the problem and propose greedy-based heuristics to address it, as same as the 0-1 Knapsack problem. The algorithm firstly selects k road segments as the starting edges and then expands the network by iteratively adding the road that has the lowest ratio of the cost and beneficial score, until the budget is insufficient.</p>",
+            "ref": "Bao J, He T, Ruan S, et al. Planning Bike Lanes based on Sharing-Bikes' Trajectories[C]// ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 2017:1377-1386."
+            
+        },
+        {
+            "pic": "moba.png",
+            "title": "A Visual Analytics Approach for Understanding Reasons behind Snowballing and Comeback in MOBA Games",
+            "content": "<p>Moba Game designers need to gain in-depth insight from the game progress, especially the snowballing and comeback, to improve the game balance and the trade-off between entertainment and competitive. </p><p>In one hand, the heterogeneous multi-dimensional spatio-temporal data generated from the Moba game hinders the game analysis. Furthermore, game developers often find it difficult to determine their causes and triggers with so many game design choices and game parameters involved. </p><p>This work designs six coordinated views to tackle above challenges. A set of tailored widgets encode the game information, including the battle, hero’s level improvement, equipment evolution, etc, along the coordinated timeline.</p>",
+            "ref": "Li Q, Xu P, Chan Y Y, et al. A Visual Analytics Approach for Understanding Reasons behind Snowballing and Comeback in MOBA Games[J]. IEEE Transactions on Visualization & Computer Graphics, 2016, 23(1):211-220."
+        },
+        {
+            "pic": "HOLA.png",
+            "title": "HOLA: Human-like Orthogonal Network Layout",
+            "content": "<p>This work presents a new “human-centred” methodology for automatic network layout algorithm design that uses both formative and summative user studies. They fisrtly investigates which kinds of orthogonal network layout human like and identified nine significant results by asking participants to manually improve the layout and rank them. Furthermore, they proposed a novel algorithm (HOLA) integrated the results to generate human-like layout.</p>",
+            "ref": "Kieffer S, Dwyer T, Marriott K, et al. HOLA: Human-like Orthogonal Network Layout[J]. IEEE Transactions on Visualization & Computer Graphics, 2015, 22(1):349-358."
+        },
+        {
+            "pic": "JDR.png",
+            "title": "A Visual Analytics Approach for Categorical Joint Distribution Reconstruction from Marginal Projections",
+            "content": "<p>Oftentimes multivariate data are not available as sets of equally multivariate tuples, but only as sets of projections into subspaces spanned by subsets of these attributes. To leverage domain expert's knowledge into categorical joint distribution reconstruction from marginal projection, this work develops a visual analytics approach.</p><p>A backend is developed to stores massive solutions reconstructed by mathematical method and filtered according to realistic constraints, which facilitates seamless interaction. Besides, a tailored visualization consisting mainly of augmented parallel coordinates is also designed to incorporate domain knowledge for further exploration. When the dimensionality of the solution space is large, there will be too many axes in the parallel coordinates display. To tackle this problem, different types of features are computed automatically according to some principles or set by the user manually.</p>",
+            "ref": "Cong X, Wen Z, Mueller K. A Visual Analytics Approach for Categorical Joint Distribution Reconstruction from Marginal Projections[J]. IEEE Transactions on Visualization & Computer Graphics, 2016, 23(1):51-60."
+        }
+    ]
+}
