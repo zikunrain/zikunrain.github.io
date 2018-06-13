@@ -20,12 +20,14 @@
         </p>
       </footer>
       <div class="btn-div">
-        <div class="btn"
-          :class="{highlighted: isHightlighted}"
-          @mouseleave="unHighlightBtn()"
-          @mouseenter="highlightBtn()">
-          Read more »
-        </div>
+        <a href="./blog.html">
+          <div class="btn"
+            :class="{highlighted: isHightlighted}"
+            @mouseleave="unHighlightBtn()"
+            @mouseenter="highlightBtn()">
+            Read more »
+          </div>
+        </a>
       </div>
     </article>
   </div>
@@ -78,6 +80,10 @@ export default {
     position: relative;
     width: calc(100%);
     top: 20px;
+
+    a {
+      text-decoration: none;
+    }
 
     .btn {
       position: relative;

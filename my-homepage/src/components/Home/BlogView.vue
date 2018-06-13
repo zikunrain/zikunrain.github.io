@@ -24,7 +24,7 @@
         :time="ab.time">
       </blog-abstract>
       <div class="more-to-blog">
-        <a href="#">MORE »</a>
+        <a href="./blog.html">MORE »</a>
       </div>
     </div>
   </div>

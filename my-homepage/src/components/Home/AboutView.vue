@@ -80,7 +80,7 @@ export default {
     })
 
     const rect = this.$refs.imgRef[0].getBoundingClientRect()
-    this.slidesHeight = rect.width * 0.62
+    this.slidesHeight = rect.width * 0.75
   },
   methods: {
     autoPlay: function () {

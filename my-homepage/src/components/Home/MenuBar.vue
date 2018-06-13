@@ -3,8 +3,8 @@
     <div class="menu">
       <div class="menu-item">HOME</div>
       <div class="menu-item">ABOUT</div>
-      <div class="menu-item">GITHUB</div>
-      <div class="menu-item"><a href="../../../blog.html">BLOG</a></div>
+      <div class="menu-item"><a href="https://github.com/MRsoldiers">GITHUB</a></div>
+      <div class="menu-item"><a href="./blog.html">BLOG</a></div>
       <div class="menu-item">PUBLICATIONS</div>
     </div>
   </div>
