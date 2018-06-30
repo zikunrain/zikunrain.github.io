@@ -1,7 +1,7 @@
 <template>
   <div class="doc-view">
     <div class="doc-header">
-      <span class="header-text">Selected Document</span>
+      <span class="header-text">Selected Blog</span>
     </div>
     <div class="doc-content">
       <div class="title">

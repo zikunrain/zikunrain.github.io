@@ -8,7 +8,7 @@
     <div class="blog-content">
       <div class="doc-title-list">
         <div class="doc-title-list-header">
-          <span class="header-text">Document List</span>
+          <span class="header-text">Blog List</span>
         </div>
         <div class="doc-title-list-cont">
           <div class="doc-title" v-for="(t, index) in docTitles" :key="index"

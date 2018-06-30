@@ -60,6 +60,48 @@
 			"title": "Improving User Confidence in Concept Maps: Exploring Data Driven Explanations",
 			"content": "<p>Despite concept map has been widely used in decision making and planning, the gap between the presentation and original data hinders user from conveying discovery confidently and even convincing others.</p><p>This paper presents a study to investigate how data-driven explanation improve user confidence in concept map, also the difference between two forms of concept map generation. The result shows that the bottom-up methods which repeatedly aggregate pairs of concepts into clusters  outperform and data-driven explanation helps improve confidence.</p>",
 			"ref": "Bras P L, Robb D A, Methven T S, et al. Improving User Confidence in Concept Maps: Exploring Data Driven Explanations[C]// CHI Conference. 2018:1-13."
-		}
+        },
+        {
+            "pic": "TopicTile.png",
+            "title": "TopicOnTiles: Tile-Based Spatio-Temporal Event Analytics via Exclusive Topic Modeling on Social Media",
+            "content": "<p>As the anomaly detection has been widely studied and is still challenging, this paper proposes TopicOnTiles, a visual analytics system that can reveal the information relevant to anomalous events in a multi-level tile-based map interface by using social media data.</p><p>The system applies novel exclusive topics model and integrates several visual encodings such as the Tile Glyph, the Word Glyph and the exclusiveness score and density map. The controlled experiment, a comprehensive user study, demonstrates the usability and effectiveness of the visual encodings and mining model respectively.</p>",
+            "ref": "Minsuk C, Sungbok S, Alark J, et al. Tile-Based Spatio-Temporal Event Analytics via Exclusive Topic Modeling on Social Media [C]// CHI Conference. 2018:1-11."
+        },
+        {
+            "pic": "Overdraw.png",
+            "title": "Using Animation to Alleviate Overdraw in Multiclass Scatterplot Matrices",
+            "content": "<p>Multiclass scatterplot matrices(SPLOMs) have issues with overdraw. To address it, this paper explores whether animation using flickering points is an effective way to alleviate overdraw in these multiclass SPLOMs.</p><p>To this end, they develop a user interface of multiclass SPLOMs which employs animation techniques that is to redraws points by looping over the dataset, allowing for overdrawn points to eventually reappear. Based on the interface, the comprehensive user study is conducted and hence confirms their conjecture. The animation using flickering points can reveal several types of interesting features of the dataset through the observations of flickering.</p><p>The animated live demo is released (vgl.cs.usfca.edu/animatedsploms/).</p>",
+            "ref": "Helen C, Sophie E, Jinho C, et al. Using Animation to Alleviate Overdraw in Multiclass Scatterplot Matrices [C]// CHI Conference. 2018:1-12."
+        },
+        {
+            "pic": "TCAL.png",
+            "title": "Using Animation to Alleviate Overdraw in Multiclass Scatterplot Matrices",
+            "content": "<p>Understanding team communication and collaboration patterns is critical for improving work efficiency in organizations. The paper presents an interactive visualization system, T-Cal, that supports the analysis of the conversation data from modern team messaging platforms.</p><p>T-Cal employs a user-familiar visual interface, a calendar, to enable seamless multi-scale browsing of data from different perspectives. T-Cal also incorporates a number of analytical techniques for disentangling interleaving conversations, extracting keywords and estimating sentiment. The design of T-Cal is based on an iterative user-centered design process including interview studies, requirements gathering, initial prototypes demonstration, and evaluation with domain experts.</p>",
+            "ref": "Fu S, Zhao J, Cheng H F, et al. T-Cal: Understanding Team Conversational Data with Calendar-based Visualization[C]// CHI Conference. 2018:1-13."
+        },
+        {
+            "pic": "CrimePrediction.png",
+            "title": "Modeling Temporal-Spatial Correlations for Crime Prediction",
+            "content": "<p>This paper proposed a framework for crime prediction, capturing the dynamics of the data by modelling the temporal-spatial correlations.</p><p>Several features related to the crime are extracted from each region in each time slot. Given the labels, i.e. the number of crime, the basic problem is formulated as an optimization problem to train the parameters W_kn for each region r_n in each time slot t_k, as the Fig. 3 shown above.</p>",
+            "ref": "Zhao X, Tang J. Modeling Temporal-Spatial Correlations for Crime Prediction[C]// ACM, 2017:497-506."
+        },
+        {
+            "pic": "SurveyADED.png",
+            "title": "A Survey on Anomaly detection in Evolving Data",
+            "content": "<p>Unlike static data where the whole observations of objects are available at once, evolving data will update over time, which requires efficient algorithm to provide real-time computation and large storage to handle unbounded evolving data. </p><p>In fact, a considerable number of real-world applications encounter the challenges of modeling the dynamically changing characteristics of environments and anomalies detection in evolving data. The paper reviews researches about anomaly detection in evolving data. A categorization of existing anomaly detection approaches is proposed as the Fig .1 above.</p>",
+            "ref": "Saleh M, Rashidi L. A Survey on Anomaly detection in Evolving Data[J] Acm sigkdd explorations newsletter"
+        },
+        {
+            "pic": "CrimeUrban.png",
+            "title": "Crime in Urban Areas: A Data Mining Perspective",
+            "content": "<P>Traditional urban crime researches based on demographic data are insufficient to capture the dynamics and complexity of urban crimes. Over the last decade, increasing number of advanced data-driven approaches are proposed, which leverage the fine-grained urban, mobile, and public service data that covers various crime-related sources as well as rich environmental and social information.</P><P>The figure above demonstrates categorizations of the urban crime patterns and computational tasks.</P>",
+            "ref": "Zhao X, Tang J. Crime in Urban Areas: A Data Mining Perspective[J] Acm sigkdd explorations newsletter"
+        },
+        {
+            "pic": "Fire.png",
+            "title": "A real-time pipeline for spatio-temporal fire risk prediction",
+            "content": "<p>This paper contributes two fire risk prediction models respectively for commercial properties and residential property census blocks as well as the deployment of the framework integrating the models and interactive tool. To capture the dynamics and hence provide reliable prediction and sustainable service as well, the proposed machine learning models take those time-varying features related to the fire accident, such as the non-fire violations, into account. The deployed pipeline leverages domain knowledge to inform the prioritization of fire inspections for commercial properties and select the census blocks which need fire safety education.</p><p>The AUC indicates that the proposed model outperforms the state-of-art fire prediction model. Moreover, the usefulness and the effectiveness are demonstrated by a real-world application where the 58% of the predicted high-risk properties had a fire incident and 23% of the building fire incidents took place in the predicted high or medium risk properties.</p>",
+            "ref": "Walia B, Hu Q, Chen J, et al. A real-time pipeline for spatio-temporal fire risk prediction[C]// ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 2018."
+        }
     ]
 }
