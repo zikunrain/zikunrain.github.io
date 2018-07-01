@@ -102,6 +102,12 @@
             "title": "A real-time pipeline for spatio-temporal fire risk prediction",
             "content": "<p>This paper contributes two fire risk prediction models respectively for commercial properties and residential property census blocks as well as the deployment of the framework integrating the models and interactive tool. To capture the dynamics and hence provide reliable prediction and sustainable service as well, the proposed machine learning models take those time-varying features related to the fire accident, such as the non-fire violations, into account. The deployed pipeline leverages domain knowledge to inform the prioritization of fire inspections for commercial properties and select the census blocks which need fire safety education.</p><p>The AUC indicates that the proposed model outperforms the state-of-art fire prediction model. Moreover, the usefulness and the effectiveness are demonstrated by a real-world application where the 58% of the predicted high-risk properties had a fire incident and 23% of the building fire incidents took place in the predicted high or medium risk properties.</p>",
             "ref": "Walia B, Hu Q, Chen J, et al. A real-time pipeline for spatio-temporal fire risk prediction[C]// ACM SIGKDD International Conference on Knowledge Discovery and Data Mining. ACM, 2018."
+        },
+        {
+            "pic": "roc.png",
+            "title": "ROC&AUC",
+            "content": "<p>ROC and AUC are used to measure the performance of a binary classifier. ROC curve is also known as receiver operating characteristic curve. Since a threshold determines a classification result and hence a data point in the FPRate-TPRate coordinate, a line chart called ROC curve can be generated given a series of thresholds. A classifier is better if its ROC curve totally covers another’s. When two ROC curves intersect, the area under the curve, namely AUC, is introduced as a more effective metric.</p>",
+            "ref": ""
         }
     ]
 }
